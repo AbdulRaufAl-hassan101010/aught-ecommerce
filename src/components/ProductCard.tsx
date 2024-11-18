@@ -1,14 +1,31 @@
 import { images } from "@/constants/images";
 import { Heart, ShoppingCartIcon, StarIcon } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
+import Ratings from "./Ratings";
 
-const ProductCard = () => {
+interface ProductCardProps {
+  name: string;
+  price: number;
+  description: string;
+  rating: number;
+  totalReviews: number;
+  image: string | StaticImageData;
+}
+
+const ProductCard = ({
+  name,
+  price,
+  description,
+  rating,
+  totalReviews,
+  image,
+}: ProductCardProps) => {
   return (
     <div>
       <div className="bg-gray-100 rounded-sm h-[240px] shadow-sm relative ">
         <Image
-          src={images.grocery}
+          src={image}
           alt="product"
           className="w-full h-full object-contain"
         />
@@ -24,20 +41,17 @@ const ProductCard = () => {
         </div>
       </div>
       <div className="mt-5">
-        <div className="flex justify-between font-semibold">
-          <div>Mango - 1kg</div>
+        <div className="flex justify-between font-bold">
+          <div>{name}</div>
           <div>
-            <sup>$</sup>10.00
+            <sup>$</sup>
+            {price}
+            <sup>.00</sup>
           </div>
         </div>
-        <p className="mt-3 text-sm text-gray-500">Best mango juice in africa</p>
-        <div className="mt-3 flex">
-          <StarIcon className="text-blue-400" fill="#60a5fa" />
-          <StarIcon className="text-blue-400 ml-0.5" fill="#60a5fa" />
-          <StarIcon className="text-blue-400 ml-0.5" fill="#60a5fa" />
-          <StarIcon className="text-blue-400 ml-0.5" fill="#60a5fa" />
-          <StarIcon className="text-blue-400 ml-0.5" fill="#60a5fa" />
-          <span className="ml-1 text-gray-500">(122)</span>
+        <p className="mt-3 text-sm text-gray-500">{description}</p>
+        <div className="mt-3">
+          <Ratings rating={rating} totalReviews={totalReviews} />
         </div>
       </div>
     </div>

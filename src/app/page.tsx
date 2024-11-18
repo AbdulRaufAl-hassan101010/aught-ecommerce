@@ -33,7 +33,7 @@ export default function Home() {
       <main className="mt-10">
         {/* categories */}
         <section>
-          <h3 className="text-xl font-medium">Categories</h3>
+          <h3 className="text-xl font-semibold">Categories</h3>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-5">
             <Link
@@ -108,13 +108,48 @@ export default function Home() {
 
         {/* Products */}
         <section className="mt-10">
-          <h2 className="text-xl font-medium">Popular Products</h2>
+          <h2 className="text-xl font-semibold">Popular Products</h2>
           <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-10">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard
+              name={"Mongo Juice"}
+              price={190}
+              description={"Best orange juice in the market"}
+              rating={4.7}
+              totalReviews={120}
+              image={images.grocery}
+            />
+            <ProductCard
+              name={"Mongo Juice"}
+              price={190}
+              description={"Best orange juice in the market"}
+              rating={4.7}
+              totalReviews={120}
+              image={images.grocery}
+            />
+            <ProductCard
+              name={"Mongo Juice"}
+              price={190}
+              description={"Best orange juice in the market"}
+              rating={4.7}
+              totalReviews={120}
+              image={images.grocery}
+            />
+            <ProductCard
+              name={"Mongo Juice"}
+              price={190}
+              description={"Best orange juice in the market"}
+              rating={4.7}
+              totalReviews={120}
+              image={images.grocery}
+            />
+            <ProductCard
+              name={"Mongo Juice"}
+              price={190}
+              description={"Best orange juice in the market"}
+              rating={4.7}
+              totalReviews={120}
+              image={images.grocery}
+            />
           </div>
         </section>
       </main>

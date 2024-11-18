@@ -23,7 +23,7 @@ const Navbar = () => {
           >
             <ShoppingCartIcon />{" "}
             <span className="ml-1 text-sm hidden md:inline-block">cart</span>
-            <sup className="bg-blue-500 text-white rounded-full w-[22px] h-[22px] flex justify-center items-center  ml-1">
+            <sup className="bg-blue-500 text-white rounded-full w-[22px] h-[22px] flex justify-center items-center  ml-0.5">
               9+
             </sup>
           </Link>
