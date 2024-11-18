@@ -1,5 +1,4 @@
-import { images } from "@/constants/images";
-import { Heart, ShoppingCartIcon, StarIcon } from "lucide-react";
+import { Heart, ShoppingCartIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Ratings from "./Ratings";

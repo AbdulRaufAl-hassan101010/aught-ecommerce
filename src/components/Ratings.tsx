@@ -12,9 +12,9 @@ interface RatingsProps {
   className?: string;
 }
 
-const Ratings = ({ className, totalReviews, rating }: RatingsProps) => {
+const Ratings = ({ totalReviews, rating }: RatingsProps) => {
   return (
-    <div className="flex h-10 items-center overflow-hidden">
+    <div className="flex h-5 items-center overflow-hidden">
       {Array.from({ length: 5 }).map((_, index) => {
         if (rating - index >= 1) {
           return (
@@ -27,11 +27,7 @@ const Ratings = ({ className, totalReviews, rating }: RatingsProps) => {
           );
         } else if (rating - index >= 0.5 && rating - index < 1) {
           return (
-            <FontAwesomeIcon
-              icon={faStarHalfAlt}
-              key={index}
-              color="#60a5fa "
-            />
+            <FontAwesomeIcon icon={faStarHalfAlt} key={index} color="#60a5fa" />
           );
         } else {
           return <FontAwesomeIcon icon={faStar} key={index} color="#60a5fa" />;

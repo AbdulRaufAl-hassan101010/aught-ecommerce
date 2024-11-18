@@ -6,7 +6,7 @@ import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
   return (
-    <div className="container mx-auto mt-3 px-3 md:px-0">
+    <div className="container mx-auto mt-3 px-5">
       <header className="bg-blue-200 rounded-sm flex justify-between h-[400px] shadow-sm">
         <div className="flex-1 flex items-center p-5">
           <div className="mb-5">

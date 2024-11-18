@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white container mx-auto py-3 px-3 md:px-0">
+    <nav className="bg-white container mx-auto py-3 px-5">
       <div className="flex justify-between">
         <Link href="/" className="text-2xl font-semibold">
           Aught
