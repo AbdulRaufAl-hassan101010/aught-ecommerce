@@ -2,6 +2,7 @@ import { Heart, ShoppingCartIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Ratings from "./Ratings";
+import Link from "next/link";
 
 interface ProductCardProps {
   name: string;
@@ -23,11 +24,13 @@ const ProductCard = ({
   return (
     <div>
       <div className="bg-gray-100 rounded-sm h-[240px] shadow-sm relative ">
-        <Image
-          src={image}
-          alt="product"
-          className="w-full h-full object-contain"
-        />
+        <Link href="/product/1">
+          <Image
+            src={image}
+            alt="product"
+            className="w-full h-full object-contain"
+          />
+        </Link>
         <div className="absolute bottom-2 left-0 right-0 w-full px-3">
           <div className="flex w-full justify-between">
             <button className="w-[50px] h-[50px] bg-white flex justify-center items-center rounded-full hover:opacity-80">
@@ -41,7 +44,9 @@ const ProductCard = ({
       </div>
       <div className="mt-5">
         <div className="flex justify-between font-bold">
-          <div>{name}</div>
+          <div>
+            <Link href="/product/1">{name}</Link>
+          </div>
           <div>
             <sup>$</sup>
             {price}

@@ -18,7 +18,7 @@ const Navbar = () => {
             <span className="ml-1 text-sm hidden md:inline-block">Account</span>
           </Link>
           <Link
-            href="/contact"
+            href="/cart"
             className="flex items-center hover:text-gray-600"
           >
             <ShoppingCartIcon />{" "}

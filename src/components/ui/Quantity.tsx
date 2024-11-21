@@ -19,8 +19,7 @@ const Quantity = ({ quantity, setQuantity }: QuantityProps) => {
       <input
         type="number"
         className="outline-none bg-gray-200 py-1 text-center w-16"
-        defaultValue={quantity}
-        // value={quantity}
+        value={quantity}
         onChange={(e) => setQuantity(Number(e.target.value))}
       />
       <button

@@ -2,7 +2,7 @@
 
 import Comments from "@/components/Comments";
 import ProductCard from "@/components/ProductCard";
-import Quantity from "@/components/Quantity";
+import Quantity from "@/components/ui/Quantity";
 import Ratings from "@/components/Ratings";
 import Button from "@/components/ui/Button";
 import { images } from "@/constants/images";
