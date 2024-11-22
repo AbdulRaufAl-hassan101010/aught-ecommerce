@@ -3,6 +3,7 @@ import SearchInput from "../components/SearchInput";
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import DownloadApp from "@/components/DownloadApp";
 
 export default function Home() {
   return (
@@ -152,6 +153,9 @@ export default function Home() {
             />
           </div>
         </section>
+
+        {/* download app from the stote */}
+        <DownloadApp />
       </main>
     </div>
   );
