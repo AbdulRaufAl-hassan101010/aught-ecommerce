@@ -42,7 +42,7 @@ const ProductCard = ({
           </div>
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-3">
         <div className="flex justify-between font-bold">
           <div>
             <Link href="/product/1">{name}</Link>
@@ -53,7 +53,7 @@ const ProductCard = ({
             <sup>.00</sup>
           </div>
         </div>
-        <p className="mt-3 text-sm text-gray-500">{description}</p>
+        <p className="mt- text-sm text-gray-500">{description}</p>
         <div className="mt-3">
           <Ratings rating={rating} totalReviews={totalReviews} />
         </div>
