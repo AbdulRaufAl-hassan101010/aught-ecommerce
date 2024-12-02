@@ -23,7 +23,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <div>
-      <div className="bg-gray-100 rounded-sm h-[240px] shadow-sm relative ">
+      <div className="bg-gray-100 rounded-sm h-[240px] shadow-sm relative">
         <Link href="/product/1">
           <Image
             src={image}
@@ -31,7 +31,7 @@ const ProductCard = ({
             className="w-full h-full object-contain"
           />
         </Link>
-        <div className="absolute bottom-2 left-0 right-0 w-full px-3">
+        <div className="absolute bottom-2 left-0 right-0 w-full px-3 z-10">
           <div className="flex w-full justify-between">
             <button className="w-[50px] h-[50px] bg-white flex justify-center items-center rounded-full hover:opacity-80">
               <Heart className="text-blue-400" />

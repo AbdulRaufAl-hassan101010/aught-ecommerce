@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Aught",
@@ -20,9 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} bg-white mb-10`}>
+      <body className={`${lato.className} bg-white`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
