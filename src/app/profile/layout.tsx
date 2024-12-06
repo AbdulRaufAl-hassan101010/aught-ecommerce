@@ -15,7 +15,7 @@ export default function ProfileLayout({
   children?: React.ReactNode;
 }>) {
   return (
-    <main className="container mx-auto px-5">
+    <main className="container mx-auto px-5 bg-light">
       <div className="mt-5 flex flex-col lg:flex-row">
         <ul className="w-full lg:w-2/12">
           <li className="border rounded-t-md font-medium hover:bg-gray-100">

@@ -4,8 +4,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white container mx-auto py-3 px-5 sticky top-0 h-[90px] z-50">
-      <div className="flex justify-between h-full items-center">
+    <nav className="bg-white  sticky top-0 h-[90px] z-50 mb-10">
+      <div className="flex justify-between h-full items-center container mx-auto py-3 px-5">
         <Link href="/" className="text-2xl font-semibold">
           Aught
         </Link>
