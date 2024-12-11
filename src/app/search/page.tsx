@@ -7,7 +7,7 @@ import React from "react";
 import { images } from "@/constants/images";
 
 const Page = () => {
-  const [search, setSearch] = React.useState("T-shirt");
+  const [search] = React.useState("T-shirt");
 
   return (
     <main className="mx-auto container">
