@@ -7,9 +7,9 @@ import Link from "next/link";
 interface ProductCardProps {
   name: string;
   price: number;
-  description: string;
-  rating: number;
-  totalReviews: number;
+  description?: string;
+  rating?: number;
+  totalReviews?: number;
   image: string | StaticImageData;
 }
 
@@ -53,10 +53,12 @@ const ProductCard = ({
             <sup>.00</sup>
           </div>
         </div>
-        <p className="mt- text-sm text-gray-500">{description}</p>
-        <div className="mt-3">
-          <Ratings rating={rating} totalReviews={totalReviews} />
-        </div>
+        {description && <p className="text-gray-500">{description}</p>}
+        {rating !== undefined && (
+          <div className="mt-3">
+            <Ratings rating={rating} totalReviews={totalReviews} />
+          </div>
+        )}
       </div>
     </div>
   );

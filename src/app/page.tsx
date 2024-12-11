@@ -1,11 +1,16 @@
+"use client";
+
 import { images } from "@/constants/images";
 import SearchInput from "../components/SearchInput";
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 // import DownloadApp from "@/components/DownloadApp";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const navigate = useRouter();
+
   return (
     <div className="container mx-auto mt-3 px-5">
       <header className="bg-blue-200 rounded-sm flex justify-between h-[400px] shadow-sm">
@@ -18,7 +23,9 @@ export default function Home() {
               Get everything you need on aught, your best shop platform.
             </p>
             <div className="mt-5">
-              <SearchInput />
+              <SearchInput
+                onClick={() => navigate.push("/search?search=macbook")}
+              />
             </div>
           </div>
         </div>
